@@ -1,0 +1,119 @@
+body {
+    font-family: "Roboto", sans-serif;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background: hsl(234, 29%, 20%);
+}
+
+#main {
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 100%;
+}
+
+.container {
+    width: 878px;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 45px;
+}
+
+.card {
+    display: flex;
+    background: hsl(0, 0%, 100%);
+    padding: 20px;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.right {
+    position: relative;
+    overflow: hidden;
+}
+
+.left {
+    display: flex;
+    flex-direction: column;
+    padding: 24px 26px;
+    gap: 16px;
+}
+
+
+.left .title {
+    font-weight: 600;
+    font-size: 48px;
+    margin-top: 15px;
+}
+
+.left .txt {
+    font-size: 14px;
+}
+
+.list-items {
+    display: grid;
+    gap: 10px;
+}
+
+.list-items .items {
+    display: flex;
+    gap: 15px;
+}
+
+.list-items .items img {
+    max-width: 90%;
+}
+
+.email-section {
+    display: flex;
+    flex-direction: column;
+    margin-top: 25px;
+}
+
+.email-section input {
+    padding: 16px;
+    border-radius: 10px;
+    outline: none;
+    border: 1px solid rgba(0, 0, 0, 0.178);
+}
+
+.form-section .btn {
+    width: 100%;
+    padding: 16px;
+    border-radius: 10px;
+    outline: none;
+    margin-top: 18px;
+    color: hsl(0, 0%, 100%);
+    background: hsl(234, 29%, 20%);
+    font-size: 16px;
+    font-weight: 500;
+}
+
+@media (max-width: 1024px) {
+
+    .container {
+        padding: 0
+    }
+
+    .card {
+        flex-direction: column-reverse;
+        padding: 0;
+        border-radius: 0;
+    }
+
+    .right {
+        width: 100%;
+        border-bottom-left-radius: 15px;
+        border-bottom-right-radius: 15px;
+    }
+
+    .img-banner {
+        transform: scale(1.05);
+    }
+
+    .email-section label {
+        font-weight: 500;
+        margin-bottom: 7px;
+    }
+}
