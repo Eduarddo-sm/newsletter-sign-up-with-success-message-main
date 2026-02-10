@@ -62,6 +62,12 @@ form.addEventListener("submit", (event) => {
             error.classList.remove("error-email")
             emailField.classList.remove("email-field-error");
         }
+
+        const sectionOne = document.getElementById("main");
+        sectionOne.style.display = "none";
+        const sectionTwo = document.getElementById("section-two");
+        sectionTwo.style.display = "flex"
+
     }
     
 })

@@ -1,0 +1,9 @@
+addEventLister("submit", (event)=>{})
+
+let error = labelEmail.querySelector(".error-email");
+
+document.createElement("p");
+.textContent = "Teste";
+.classList.add("error-email");
+
+ animation: shake 0.4s ease-in-out;

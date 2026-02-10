@@ -85,7 +85,7 @@ body {
     color: hsl(4, 100%, 67%);
 }
 
-.email-section .email-field-error::placeholder{
+.email-section .email-field-error::placeholder {
     color: hsl(4, 100%, 67%);
 }
 
@@ -99,16 +99,83 @@ body {
     background: hsl(234, 29%, 20%);
     font-size: 16px;
     font-weight: 500;
+    transition: .3s ease-in-out;
+    cursor: pointer;
+    border: none;
 }
+
+.form-section .btn:hover {
+    background: hsl(4, 100%, 67%);
+
+}
+
+
 
 .form-section label {
     display: flex;
     justify-content: space-between;
+    margin-bottom: 5PX;
 }
 
 .form-section .error-email {
     font-size: 12px;
     color: hsl(4, 100%, 67%);
+}
+
+#section-two {
+    display: none;
+    width: 100%;
+}
+
+.container-two {
+    width: 395px;
+    margin: 0 auto;
+}
+
+.card-two {
+    display: flex;
+    flex-direction: column;
+    background: hsl(0, 0%, 100%);
+    padding: 43px;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.card-two img {
+    width: 15%;
+    margin-bottom: 15px;
+}
+
+.title-two {
+    font-size: 36px;
+    font-weight: 800;
+    padding-right: 25px;
+    line-height: 100%;
+    color: hsl(234, 29%, 20%);
+}
+
+.card-two .paragraph {
+    margin: 20px 0;
+}
+
+.card-two .btn {
+    width: 100%;
+    padding: 16px;
+    border-radius: 10px;
+    outline: none;
+    margin-top: 18px;
+    color: hsl(0, 0%, 100%);
+    background: hsl(234, 29%, 20%);
+    font-size: 16px;
+    font-weight: 500;
+    transition: .3s ease-in-out;
+    cursor: pointer;
+    border: none;
+}
+
+.card-two .btn:hover {
+    background: linear-gradient(to right, hsl(4, 85%, 56%), hsl(4, 100%, 67%));
+    transition: .3s ease-in-out;
 }
 
 @media (max-width: 1024px) {
@@ -149,9 +216,23 @@ body {
 }
 
 @keyframes shake {
-    0% {transform: translateX(0);}
-    25% {transform: translateX(-5px);}
-    50% {transform: translateX(5px);}
-    75% {transform: translateX(-5px);}
-    100% {transform: translateX(0);}
+    0% {
+        transform: translateX(0);
+    }
+
+    25% {
+        transform: translateX(-5px);
+    }
+
+    50% {
+        transform: translateX(5px);
+    }
+
+    75% {
+        transform: translateX(-5px);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
 }
